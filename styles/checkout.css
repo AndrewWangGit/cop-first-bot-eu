@@ -1,0 +1,175 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+}
+*:focus {
+  outline: none !important;
+}
+body {
+  margin: 0px;
+}
+h1 {
+  margin: 0px;
+  font-weight: 900;
+}
+.billing-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 22px;
+}
+.wrapper {
+  background: white;
+  box-shadow: 0px 0px 80px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 750px;
+  height: 600px;
+  box-sizing: border-box;
+}
+.navigation {
+  height: 100%;
+  width: 209px;
+  background: #8884ff;
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+.nav-text {
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+.nav-text h1 {
+  margin: 0px;
+  font-weight: 900;
+  color: white;
+}
+.nav-text h3 {
+  margin: 0px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+}
+.content {
+  width: 541px;
+  height: 600px;
+  background: white;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.nav-button {
+  width: 100%;
+  outline: none !important;
+  border: none !important;
+  height: 40px;
+  font-weight: 900;
+  background: white;
+  color: #8884ff;
+  margin-top: 20px;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.nav-button:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.navigation form {
+  width: 100%;
+}
+.billing-row {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 35px;
+  margin-bottom: 5px;
+}
+.billing-row input {
+  border: 3px solid #8884ff;
+  padding-left: 12px;
+  font-weight: 900;
+  color: #8884ff;
+  width: 100% !important;
+}
+#country, #card_type {
+  padding-left: 12px !important;
+}
+#month, #year {
+  padding-left: 6px;
+}
+.billing-row input::placeholder {
+  color: #C7C5FF;
+  font-weight: 900;
+}
+.billing-row select {
+  border: 3px solid #8884ff;
+  color: #8884FF;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+}
+#month {
+  width: 50px !important;
+}
+#year {
+  width: 75px !important;
+}
+#cvv {
+  width: 50px !important;
+  padding: 0px !important;
+}
+#cvv {
+  text-align: center;
+}
+#cvv::placeholder {
+  text-align: center;
+}
+.button-container {
+  width: 100%;
+  text-align: center;
+  height: 35px;
+  margin-top: 22px;
+}
+.button-container button {
+  height: 100%;
+  background: #8884ff;
+  color: white;
+  font-weight: 900;
+  padding: 0px 50px;
+  border: 0px solid transparent !important;
+  outline: 0px solid transparent !important;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.button-container button:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.help {
+  background: white;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  color: #8884ff;
+  font-weight: 900;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

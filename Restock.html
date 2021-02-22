@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input class="keyword eyenput" type="text" name="keyword" id="keywords" placeholder="Keywords" autocomplete="off" />
+    <input class="color eyenput" type="text" name="color" id="color" placeholder="Color" autocomplete="off" />
+    <input class="size eyenput" type="text" name="size" id="size" placeholder="Size" autocomplete="off" />
+    <select class="category" id="category">
+      <option value="jackets">Jackets</option>
+      <option value="shirts">Shirts</option>
+      <option value="tops_sweaters">Tops/Sweaters</option>
+      <option value="sweatshirts">Sweatshirts</option>
+      <option value="pants">Pants</option>
+      <option value="t-shirts">T-shirts</option>
+      <option value="shorts">Shorts</option>
+      <option value="hats">Hats</option><option value="bags">Bags</option>
+      <option value="accessories">Accessories</option>
+      <option value="shoes">Shoes</option>
+      <option value="skate">Skate</option>
+    </select>
+    <input type="button" class="togglebtn" id="anysize" value="Any Size: OFF"></input>
+    <br>
+    <p>MAKE SURE TO SAVE BEFORE DETECTING FOR RESTOCKS!</p>
+    <input type="button" id="save" value="Save Restock Items!">
+    <input type="button" id="restock" value="DETECT RESTOCKS">
+  </body>
+  <script type="text/javascript" src="scripts/lib/jQuery.js"></script>
+  <script type="text/javascript" src="scripts/client_scripts/Restock.js"></script>
+</html>

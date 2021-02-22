@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/proxy.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navigation">
+        <div class="nav-text">
+          <h1>Cop First.</h1>
+          <h3>Premium</h3>
+        </div>
+        <form id="selectItems" action="SelectItems.html">
+          <input class="nav-button" type="submit" value="1. Select Items." />
+      	</form>
+      	<form id="checkoutInfo" action="Checkout.html">
+          <input class="nav-button" type="submit" value="2. Update Billing Info." />
+      	</form>
+  			<form id="proxy" action="Proxy.html">
+  				<input class="nav-button" type="submit" value="3. Proxy." />
+  			</form>
+  			<form id="settings" action="Settings.html">
+  				<input class="nav-button" type="submit" value="4. Settings." />
+  			</form>
+  			<button id="runWebScrape" class="nav-button">5. Purchase!</button>
+        <button class="help">?</button>
+      </div>
+      <div class="content">
+        <div class="billing-title">
+          <h1>Proxy Settings.</h1>
+        </div>
+        <div class="table-container">
+          <div class="radio-container">
+            <p class="special-title">Use local IP / No Proxy</p>
+            <input type="radio" id="active" name="active" value="none">
+          </div>
+          <table id="dynamic_field">
+            <tr id="row0">
+              <td>
+                <div class="special-container">
+                  <p class="special-title">Make this my active Proxy</p>
+                  <input type="radio" id="active" name="active" value="0">
+                </div>
+              </td>
+              <td>
+                <input class="title eyenput" type="text" name="title" id="title0" placeholder="title" autocomplete="off" />
+                <input class="ip eyenput" type="text" name="ip" id="ip0" placeholder="ip" autocomplete="off" />
+              </td>
+              <td>
+                <input class="port eyenput" type="text" name="port" id="port0" placeholder="port" autocomplete="off" />
+                <input class="authentication eyenput" type="text" name="authentication" id="authentication0" placeholder="username:password" autocomplete="off" />
+              </td>
+              <td class="center-btn">
+                <button name="remove" id="0" class="btn btn-danger btn_remove">Remove proxy</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="buttons-container">
+          <input class="button" type="button" name="save" id="save" value="Save proxies" />
+          <button class="button" type="button" name="add" id="add">Add proxy</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="scripts/lib/jQuery.js"></script>
+  <script type="text/javascript" src="scripts/client_scripts/Proxy.js"></script>
+  <script type="text/javascript" src="scripts/client_scripts/OpenDropDetection.js"></script>
+</html>

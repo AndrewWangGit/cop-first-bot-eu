@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Select Items</title>
+    <link rel="stylesheet" href="styles/selectitems.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navigation">
+        <div class="nav-text">
+          <h1>Cop First.</h1>
+          <h3>Premium</h3>
+        </div>
+        <form id="selectItems" action="SelectItems.html">
+          <input class="nav-button" type="submit" value="1. Select Items." />
+      	</form>
+      	<form id="checkoutInfo" action="Checkout.html">
+          <input class="nav-button" type="submit" value="2. Update Billing Info." />
+      	</form>
+        <form id="proxy" action="Proxy.html">
+          <input class="nav-button" type="submit" value="3. Proxy." />
+      	</form>
+        <form id="settings" action="Settings.html">
+          <input class="nav-button" type="submit" value="4. Settings." />
+      	</form>
+  			<button id="runWebScrape" class="nav-button">5. Purchase!</button>
+        <button class="help">?</button>
+      </div>
+      <div class="content">
+        <div class="billing-title">
+          <h1>Select Items.</h1>
+        </div>
+        <div class="table-container">
+          <table id="dynamic_field">
+            <tr id="row0">
+              <td class="sub-row">
+                <input class="keyword eyenput" type="text" name="keyword" id="keywords" placeholder="Keywords" autocomplete="off" />
+                <input class="color eyenput" type="text" name="color" id="color" placeholder="Color" autocomplete="off" />
+                <input class="size eyenput" type="text" name="size" id="size0" placeholder="Size" autocomplete="off" />
+                <input class="qty eyenput" type="text" name="qty" id="qty0" placeholder="Qty" autocomplete="off" value="N/A" disabled/>
+              </td>
+              <td class="special">
+                <select class="category" id="category0">
+                  <option value="jackets">Jackets</option>
+                  <option value="shirts">Shirts</option>
+                  <option value="tops_sweaters">Tops/Sweaters</option>
+                  <option value="sweatshirts">Sweatshirts</option>
+                  <option value="pants">Pants</option>
+                  <option value="t-shirts">T-shirts</option>
+                  <option value="shorts">Shorts</option>
+                  <option value="hats">Hats</option><option value="bags">Bags</option>
+                  <option value="accessories">Accessories</option>
+                  <option value="shoes">Shoes</option>
+                  <option value="skate">Skate</option>
+                </select>
+                <div class="check-container">
+                  <input type="button" class="togglebtn" id="anysize0" value="Any Size: OFF"></input>
+                </div>
+                <button name="remove" id="0" class="btn btn-danger btn_remove">Remove Item.</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="settings-buttons">
+          <input class="button" type="button" name="save" id="save" value="Save Items" />
+          <button class="button" type="button" name="add" id="add">Add More Items</button>
+        </div>
+        <script type="text/javascript" src="scripts/lib/jQuery.js"></script>
+        <script type="text/javascript" src="scripts/client_scripts/SelectItemsScript.js"></script>
+        <script type="text/javascript" src="scripts/client_scripts/OpenDropDetection.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

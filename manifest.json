@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Cop First EU",
+  "description": "Be first in line. Every time.",
+  "version": "2.4",
+  "content_scripts": [
+  	{
+  		"matches": ["https://www.supremenewyork.com/shop/jackets/*",
+        "https://www.supremenewyork.com/shop/shirts/*",
+        "https://www.supremenewyork.com/shop/tops-sweaters/*",
+        "https://www.supremenewyork.com/shop/sweatshirts/*",
+        "https://www.supremenewyork.com/shop/pants/*",
+        "https://www.supremenewyork.com/shop/shorts/*",
+        "https://www.supremenewyork.com/shop/t-shirts/*",
+        "https://www.supremenewyork.com/shop/hats/*",
+        "https://www.supremenewyork.com/shop/bags/*",
+        "https://www.supremenewyork.com/shop/accessories/*",
+        "https://www.supremenewyork.com/shop/shoes/*",
+        "https://www.supremenewyork.com/shop/skate/*"],
+  		"js": ["scripts/server_scripts/AddToCart.js"]
+  	},
+    {
+      "matches": ["https://www.supremenewyork.com/checkout"],
+      "js": ["scripts/lib/jQuery.js","scripts/server_scripts/Checkout.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "SelectItems.html"
+  },
+  "permissions": [
+  	"storage",
+    "contentSettings",
+    "proxy",
+    "browsingData"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

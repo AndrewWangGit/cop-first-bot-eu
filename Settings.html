@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles/settings.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navigation">
+        <div class="nav-text">
+          <h1>Cop First.</h1>
+          <h3>Premium</h3>
+        </div>
+        <form id="selectItems" action="SelectItems.html">
+          <input class="nav-button" type="submit" value="1. Select Items." />
+      	</form>
+      	<form id="checkoutInfo" action="Checkout.html">
+          <input class="nav-button" type="submit" value="2. Update Billing Info." />
+      	</form>
+        <form id="proxy" action="Proxy.html">
+          <input class="nav-button" type="submit" value="3. Proxy." />
+      	</form>
+        <form id="settings" action="Settings.html">
+          <input class="nav-button" type="submit" value="4. Settings." />
+      	</form>
+  			<button id="runWebScrape" class="nav-button">5. Purchase!</button>
+        <button class="help">?</button>
+      </div>
+      <div class="content">
+        <div class="billing-title">
+          <h1>Settings.</h1>
+        </div>
+        <div class="settings-content">
+          <div class="settings-row">
+            <p>Toggle images on or off on the Supreme website. Not loading images may improve performance.</p>
+            <input type="button" class="button" name="imageToggle" id="imageToggle" value="Images: ON" />
+          </div>
+          <div class="settings-row">
+            <p>Clear Supreme site data. May help with speed and declines and removes existing items in cart.</p>
+            <input type="button" class="button" name="clearData" id="clearData" value="Erase Data" />
+          </div>
+          <div class="settings-row">
+            <p>Log into Google to reduce the chance of recieving a CAPTCHA.</p>
+            <input type="button" class="button" name="googeLogin" id="googeLogin" value="Log In" />
+          </div>
+          <div class="settings-row">
+            <p>Change the search interval of drop detection. By default this value is 2 seconds.</p>
+            <input class="input" type="number" name="searchInterval" id="searchInterval" placeholder="Search Interval." />
+          </div>
+          <div class="settings-row">
+            <p>Change the delay on the checkout page. By default this value is 3 seconds.</p>
+            <input class="input" type="number" name="checkoutDelay" id="checkoutDelay" placeholder="Checkout Delay." />
+          </div>
+        </div>
+        <div class="settings-buttons">
+          <input class="button" type="button" name="save" id="save" value="Update Settings" />
+          <input class="button" type="button" name="reset" id="reset" value="Reset to Default" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="scripts/client_scripts/Settings.js"></script>
+  <script type="text/javascript" src="scripts/client_scripts/OpenDropDetection.js"></script>
+</html>

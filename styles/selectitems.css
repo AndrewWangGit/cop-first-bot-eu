@@ -1,0 +1,247 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+}
+*:focus {
+  outline: none !important;
+  font-weight: 900;
+}
+body {
+  margin: 0px;
+}
+h1 {
+  margin: 0px;
+}
+.billing-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 22px;
+  font-weight: 900;
+}
+.wrapper {
+  background: white;
+  box-shadow: 0px 0px 80px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 750px;
+  height: 600px;
+  box-sizing: border-box;
+}
+.navigation {
+  height: 100%;
+  width: 209px;
+  background: #8884ff;
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+.nav-text {
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+.nav-text h1 {
+  margin: 0px;
+  font-weight: 900;
+  color: white;
+}
+.nav-text h3 {
+  margin: 0px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+}
+.content {
+  width: 541px;
+  height: 600px;
+  background: white;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.nav-button {
+  width: 100%;
+  outline: none !important;
+  border: none !important;
+  height: 40px;
+  font-weight: 900;
+  background: white;
+  color: #8884ff;
+  margin-top: 20px;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.nav-button:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.navigation form {
+  width: 100%;
+}
+.table-container {
+  max-width: 100%;
+  overflow-y: scroll !important;
+  max-height: 75% !important;
+}
+.settings-buttons {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+}
+.button {
+  background: #8884FF;
+  color: white;
+  padding: 0px 50px;
+  height: 40px;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  font-weight: 900;
+}
+.button:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.settings-buttons input {
+  height: 100%;
+  width: 40%;
+  text-align: center;
+  background: #8884FF;
+  color: white;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  border: none !important;
+  outline: none !important;
+  padding: 0px;
+}
+.settings-buttons input:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.eyenput {
+  border: 3px solid #8884ff;
+  padding-left: 12px;
+  font-weight: 900;
+  color: #8884ff;
+  height: 35px;
+  width: 30%;
+}
+.eyenput::placeholder {
+  color: #C7C5FF;
+}
+.category {
+  border: 3px solid #8884ff;
+  font-weight: 900;
+  height: 35px;
+  color: #8884ff;
+  padding-left: 12px;
+}
+.special {
+  margin-bottom: 20px;
+}
+td {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-row {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category {
+  width: 30%;
+}
+.btn-danger {
+  height: 100%;
+  width: 30%;
+  background: #8884ff;
+  outline: none !important;
+  border: none !important;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+.btn-danger:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+td {
+  height: 35px;
+}
+th {
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.togglebtn {
+  height: 100%;
+  width: 100%;
+  background: #8884ff;
+  outline: none !important;
+  border: none !important;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+.togglebtn:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.anySize {
+  display: none;
+  width: 0%;
+  height: 0%;
+}
+.check-container {
+  width: 30%;
+}
+.help {
+  background: white;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  color: #8884ff;
+  font-weight: 900;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.qty {
+  width: 15%;
+  text-align: center;
+  padding: 0px;
+}
+.size {
+  width: 25%;
+}
+.keyword {
+  width: 25%;
+}
+.color {
+  width: 25%;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles/checkout.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="navigation">
+			<div class="nav-text">
+				<h1>Cop First.</h1>
+				<h3>Premium</h3>
+			</div>
+			<form id="selectItems" action="SelectItems.html">
+				<input class="nav-button" type="submit" value="1. Select Items." />
+			</form>
+			<form id="checkoutInfo" action="Checkout.html">
+				<input class="nav-button" type="submit" value="2. Update Billing Info." />
+			</form>
+			<form id="proxy" action="Proxy.html">
+				<input class="nav-button" type="submit" value="3. Proxy." />
+			</form>
+			<form id="settings" action="Settings.html">
+				<input class="nav-button" type="submit" value="4. Settings." />
+			</form>
+			<button id="runWebScrape" class="nav-button">5. Purchase!</button>
+			<button class="help">?</button>
+		</div>
+		<div class="content">
+			<div class="billing-title">
+				<h1>Update Billing Info.</h1>
+			</div>
+			<div class="billing-row">
+				<input type="text" id="full_name" placeholder="Full Name" />
+			</div>
+			<div class="billing-row">
+				<input type="text" id="email" placeholder="Email" />
+			</div>
+			<div class="billing-row">
+				<input type="text" id="telephone" placeholder="Phone (No Dashes)" />
+			</div>
+			<div class="billing-row">
+				<input type="text" id="address" placeholder="Address" />
+			</div>
+			<div class="billing-row">
+				<input type="text" id="address2" placeholder="Address 2" />
+			</div>
+			<div class="billing-row">
+				<input type="text" id="address3" placeholder="Address 3" />
+			</div>
+			<div class="billing-row">
+				<input type="text" id="city" placeholder="City" />
+			</div>
+			<div class="billing-row">
+				<input type="text" id="postcode" placeholder="Postcode" />
+			</div>
+			<div class="billing-row">
+				<select id="country">
+					<option value="GB">UK</option>
+					<option value="NB">UK (N. IRELAND)</option>
+					<option value="">-</option>
+					<option value="AT">AUSTRIA</option>
+					<option value="BY">BELARUS</option>
+					<option value="BE">BELGIUM</option>
+					<option value="BG">BULGARIA</option>
+					<option value="HR">CROATIA</option>
+					<option value="CZ">CZECH REPUBLIC</option>
+					<option value="DK">DENMARK</option>
+					<option value="EE">ESTONIA</option>
+					<option value="FI">FINLAND</option>
+					<option value="FR">FRANCE</option>
+					<option value="DE">GERMANY</option>
+					<option value="GR">GREECE</option>
+					<option value="HU">HUNGARY</option>
+					<option value="IS">ICELAND</option>
+					<option value="IE">IRELAND</option>
+					<option value="IT">ITALY</option>
+					<option value="LV">LATVIA</option>
+					<option value="LT">LITHUANIA</option>
+					<option value="LU">LUXEMBOURG</option>
+					<option value="MC">MONACO</option>
+					<option value="NL">NETHERLANDS</option>
+					<option value="NO">NORWAY</option>
+					<option value="PL">POLAND</option>
+					<option value="PT">PORTUGAL</option>
+					<option value="RO">ROMANIA</option>
+					<option value="RU">RUSSIA</option>
+					<option value="SK">SLOVAKIA</option>
+					<option value="SI">SLOVENIA</option>
+					<option value="ES">SPAIN</option>
+					<option value="SE">SWEDEN</option>
+					<option value="CH">SWITZERLAND</option>
+					<option value="TR">TURKEY</option>
+				</select>
+			</div>
+			<div class="billing-row">
+				<select id="card_type">
+					<option value="visa">Visa</option>
+					<option value="american_express">American Express</option>
+					<option value="master">Mastercard</option>
+					<option value="solo">Solo</option>
+					<option value="paypal">PayPal</option>
+				</select>
+			</div>
+			<div class="billing-row">
+				<input type="text" id="creditcard" placeholder="number (no spaces)" />
+			</div>
+			<div class="billing-row">
+				<select id="month">
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<select id="year">
+					<option value="2020">2020</option>
+					<option value="2021">2021</option>
+					<option value="2022">2022</option>
+					<option value="2023">2023</option>
+					<option value="2024">2024</option>
+					<option value="2025">2025</option>
+					<option value="2026">2026</option>
+					<option value="2027">2027</option>
+					<option value="2028">2028</option>
+					<option value="2029">2029</option>
+				</select>
+				<input type="text" id="cvv" placeholder="CVV" />
+			</div>
+			<div class="button-container">
+				<button id="updateBilling">Save</button>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="scripts/client_scripts/UpdateBillingInfo.js"></script>
+<script type="text/javascript" src="scripts/client_scripts/OpenDropDetection.js"></script>
+</body>
+</html>
